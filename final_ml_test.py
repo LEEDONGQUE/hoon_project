@@ -1,3 +1,6 @@
+# normal_numeric_logs_1d.npy, combined_20k_logs_drained.txt, final_ml_test.py는 그대로 유지. attack~.npy는 실험시 폐기
+# 3가지 모델에 대한 통합 코드 -> i-forest, oc-svm은 비지도 / random forest는 지도학습
+
 import numpy as np
 from sklearn.ensemble import IsolationForest, RandomForestClassifier
 from sklearn.svm import OneClassSVM
