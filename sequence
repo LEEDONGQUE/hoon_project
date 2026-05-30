@@ -1,0 +1,10 @@
+def sequence_reorder_attack(normal_logs):
+    attack = []
+    for i in range(0, len(normal_logs)-3, 3):
+        chunk = normal_logs[i:i+3]
+        if len(chunk) == 3:
+            # 순서만 교란
+            attack.append(chunk[0])
+            attack.append(chunk[2])
+            attack.append(chunk[1])
+    return attack
